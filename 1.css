@@ -5,103 +5,169 @@
 	margin-right: auto;
 	width: 400px;
 	height: 600px;
-	border: 1px solid black;
+	/*border: 1px solid grey;*/
 }
 
 p {
 	text-align: center;
 	font-size: 20pt;
 	font-weight: bold;
+	font-family: Verdana;
+	padding-bottom: 20px;
 }
 
 #picture {
 	position: absolute;
+	height: 380px;
 	width: 380px;
 	margin-left: 13px;
-	background-color: blue;
+	/*background-color: blue;*/
 }
 
 #picture div {
-	border: 1px solid black;
 	width: 90px;
 	height: 90px;
 	display: inline-block;
 	margin: 0px;
 	padding: 0px;
-	border-width: 0.1px;
+	position: absolute;
+	transition: 0.5s;
+
 }
 
+#picture div:hover {
+	width: 91px;
+	height: 91px;
+	opacity: 0.7;
+}
+
+#button {
+	position: absolute;
+	bottom: 65px;
+	left: 140px;
+	font-size: 20pt;
+	background-color: #3571f2;
+	color: white;
+	padding: 10px;
+}
+
+.p1 {
+	top: 0px;
+}
+
+.p2 {
+	top: 91px;
+}
+
+.p3 {
+	top: 182px;
+}
+
+.p4 {
+	top: 273px;
+}
+
+.p5 {
+	left: 0px;
+}
+
+.p6 {
+	left: 91px;
+}
+
+.p7 {
+	left: 182px;
+}
+
+.p8 {
+	left: 273px;
+}
 #a {
+	border:  0.2px solid grey;
 	background-image: url("panda.jpg");
 	background-position: 0% 0%;
 }
 
 #b {
+	border:  0.2px solid grey;
 	background-image: url("panda.jpg");
 	background-position: 35% 0%;
 }
 
 #c {
+	border:  0.2px solid grey;
 	background-image: url("panda.jpg");
 	background-position: 66% 0%;
 }	
 
 #d {
+	border:  0.2px solid grey;
 	background-image: url("panda.jpg");
 	background-position: 100% 0%;
 }
 
 #e {
+	border:  0.2px solid grey;
 	background-image: url("panda.jpg");
 	background-position: 0% 35%;
 }
 
 #f {
+	border:  0.2px solid grey;
 	background-image: url("panda.jpg");
 	background-position: 35% 35%;
 }
 
 #g {
+	border:  0.2px solid grey;
 	background-image: url("panda.jpg");
 	background-position: 66% 35%;
 }	
 
 #h {
+	border:  0.2px solid grey;
 	background-image: url("panda.jpg");
 	background-position: 100% 35%;
 }
 
 #i {
+	border:  0.2px solid grey;
 	background-image: url("panda.jpg");
 	background-position: 0% 66%;
 }
 
 #j {
+	border:  0.2px solid grey;
 	background-image: url("panda.jpg");
 	background-position: 35% 66%;
 }
 
 #k {
+	border:  0.2px solid grey;
 	background-image: url("panda.jpg");
 	background-position: 66% 66%;
 }	
 
 #l {
+	border:  0.2px solid grey;
 	background-image: url("panda.jpg");
 	background-position: 100% 66%;
 }
 
 #m {
+	border:  0.2px solid grey;
 	background-image: url("panda.jpg");
 	background-position: 0% 100%;
 }
 
 #n {
+	border:  0.2px solid grey;
 	background-image: url("panda.jpg");
 	background-position: 35% 100%;
 }
 
 #o {
+	border:  0.2px solid grey;
 	background-image: url("panda.jpg");
 	background-position: 66% 100%;
 }	
