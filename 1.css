@@ -53,7 +53,7 @@ p {
 
 #picture {
 	position: absolute;
-	height: 352px;
+	height: 353px;
 	width: 352px;
 	margin-left: 13px;
 	/*background-color: blue;*/
@@ -64,7 +64,7 @@ p {
 	border: 0;
 	border-collapse: collapse;
 	padding: 0;
-	background-image: url("timg.jpg");
+	background-image: url("panda.jpg");
 	width: 88px;
 	height: 88px;
 	display: inline-block;
