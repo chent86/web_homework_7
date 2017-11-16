@@ -9,6 +9,40 @@
 	/*background-color: blue;*/
 }
 
+.win {
+	color: green;
+	font-size: 50pt;
+	position: absolute;
+	top: -200px;
+	left: -10px;
+	opacity: 0;
+}
+
+.show_win {
+	color: green;
+	font-size: 50pt;
+	position: absolute;
+	top: -200px;
+	left: -10px;
+}
+
+.lose {
+	color: red;
+	font-size: 50pt;
+	position: absolute;
+	top: -200px;
+	left: 55px;
+	opacity: 0;	
+}
+
+.show_lose {
+	color: red;
+	font-size: 50pt;
+	position: absolute;
+	top: -200px;
+	left: 55px;
+}
+
 p {
 	text-align: center;
 	font-size: 20pt;
@@ -19,8 +53,8 @@ p {
 
 #picture {
 	position: absolute;
-	height: 360px;
-	width: 360px;
+	height: 352px;
+	width: 352px;
 	margin-left: 13px;
 	/*background-color: blue;*/
 	border: 3px solid black;
@@ -30,9 +64,9 @@ p {
 	border: 0;
 	border-collapse: collapse;
 	padding: 0;
-	background-image: url("panda.jpg");
-	width: 90px;
-	height: 90px;
+	background-image: url("timg.jpg");
+	width: 88px;
+	height: 88px;
 	display: inline-block;
 	margin: 0px;
 	padding: 0px;
@@ -50,11 +84,29 @@ p {
 #button {
 	position: absolute;
 	bottom: 65px;
-	left: 110px;
+	left: 70px;
 	font-size: 20pt;
 	background-color: #3571f2;
 	color: white;
 	padding: 10px;
+}
+
+#button:hover {
+	opacity: 0.5;
+}
+
+#commit {
+	position: absolute;
+	bottom: 65px;
+	left: 220px;
+	font-size: 20pt;
+	background-color: #3571f2;
+	color: white;
+	padding: 10px;
+}
+
+#commit:hover {
+	opacity: 0.5;
 }
 
 .start {
@@ -70,15 +122,15 @@ p {
 }
 
 .p2 {
-	top: 90px;
+	top: 88px;
 }
 
 .p3 {
-	top: 180px;
+	top: 176px;
 }
 
 .p4 {
-	top: 270px;
+	top: 264px;
 }
 
 .p5 {
@@ -86,74 +138,74 @@ p {
 }
 
 .p6 {
-	left: 90px;
+	left: 88px;
 }
 
 .p7 {
-	left: 180px;
+	left: 176px;
 }
 
 .p8 {
-	left: 270px;
+	left: 264px;
 }
 #a {
 	background-position: 0% 0%;
 }
 
 #b {
-	background-position: 35% 0%;
+	background-position: 33.3% 0%;
 }
 
 #c {
-	background-position: 69% 0%;
+	background-position: 66.6% 0%;
 }	
 
 #d {
-	background-position: 103% 0%;
+	background-position: 100% 0%;
 }
 
 #e {
-	background-position: 0% 35%;
+	background-position: 0% 33.3%;
 }
 
 #f {
-	background-position: 35% 35%;
+	background-position: 33.3% 33.3%;
 }
 
 #g {
-	background-position: 69% 35%;
+	background-position: 66.6% 33.3%;
 }	
 
 #h {
-	background-position: 103% 35%;
+	background-position: 100% 33.3%;
 }
 
 #i {
-	background-position: 0% 69%;
+	background-position: 0% 66.6%;
 }
 
 #j {
-	background-position: 35% 69%;
+	background-position: 33.3% 66.6%;
 }
 
 #k {
-	background-position: 69% 69%;
+	background-position: 66.6% 66.6%;
 }	
 
 #l {
-	background-position: 103% 69%;
+	background-position: 100% 66.6%;
 }
 
 #m {
-	background-position: 0% 103%;
+	background-position: 0% 100%;
 }
 
 #n {
-	background-position: 35% 103%;
+	background-position: 33.3% 100%;
 }
 
 #o {
-	background-position: 69% 103%;
+	background-position: 66.6% 100%;
 }	
 
 #p {

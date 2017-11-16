@@ -3,6 +3,7 @@ window.onload = function() {
 	for(var i = 0; i < 16; i++)
 		document.getElementById("picture").children[i].addEventListener('click', move);
 	document.getElementById("button").addEventListener('click', mix);
+	document.getElementById("commit").addEventListener('click', check);
 	document.onkeydown=function(event){
 		var e = event || window.event || arguments.callee.caller.arguments[0];
 		    if(e && e.keyCode == 37)  //left
@@ -30,11 +31,14 @@ function move() {
 		this.className = empty_position;
 		document.getElementById("p").className = origin;
 	}
+	
 
 }
 
 function mix() {
 	start = 1;
+	document.getElementById("win").className = "win";
+	document.getElementById("lose").className = "lose";
 	document.getElementById("button").className = "restart";
 	for(var i = 0; i < 16; i++) {
 		var tmp = document.getElementById("picture").children[i].className;
@@ -48,7 +52,6 @@ function mix() {
 			document.getElementById("picture").children[i].className = tmp;
 		}
 	document.getElementById("p").className = "p4 p8";
-
 }
 
 function key_push(c) {
@@ -85,4 +88,30 @@ function key_push(c) {
 			document.getElementById("p").className = tmp;
 		}			
 	}
+}
+
+function check() {
+	if(!start)
+		return;
+	if(document.getElementById("a").className == "p1 p5" &&
+		document.getElementById("b").className == "p1 p6" &&
+		document.getElementById("c").className == "p1 p7" &&
+		document.getElementById("d").className == "p1 p8" &&
+		document.getElementById("e").className == "p2 p5" &&
+		document.getElementById("f").className == "p2 p6" &&
+		document.getElementById("g").className == "p2 p7" &&
+		document.getElementById("h").className == "p2 p8" &&
+		document.getElementById("i").className == "p3 p5" &&
+		document.getElementById("j").className == "p3 p6" &&
+		document.getElementById("k").className == "p3 p7" &&
+		document.getElementById("l").className == "p3 p8" &&
+		document.getElementById("m").className == "p4 p5" &&
+		document.getElementById("n").className == "p4 p6" &&
+		document.getElementById("o").className == "p4 p7" &&
+		document.getElementById("p").className == "p4 p8") {
+			document.getElementById("win").className = "show_win";
+	}
+	else
+		document.getElementById("lose").className = "show_lose";
+	start = 0;
 }
