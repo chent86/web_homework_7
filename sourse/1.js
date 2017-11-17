@@ -139,8 +139,8 @@ function restart() {
 }
 
 function change() {
-	picture = (picture+1)%5;
-	document.getElementById("pic").className = "a"+picture+" b0";
+	picture = (picture+1)%4;
+	document.getElementById("pic").className = "a"+picture+" b"+(opacity+1)%2;
 	restart();
 }
 
