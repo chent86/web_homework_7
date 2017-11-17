@@ -139,7 +139,7 @@ function restart() {
 }
 
 function change() {
-	picture = (picture+1)%4;
+	picture = (picture+1)%3;
 	document.getElementById("pic").className = "a"+picture+" b"+(opacity+1)%2;
 	restart();
 }

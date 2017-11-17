@@ -92,19 +92,15 @@ h1 {
 	border: 0!important;
 }
 .a0 {
-	background-image: url("../picture/1.png");
+	background-image: url("../picture/2.png");
 }
 
 .a1 {
-	background-image: url("../picture/2.png");	
-}
-
-.a2 {
 	background-image: url("../picture/3.png");	
 }
 
-.a3 {
-	background-image: url("../picture/5.jpg");		
+.a2 {
+	background-image: url("../picture/5.jpg");	
 }
 
 #picture div:hover {
