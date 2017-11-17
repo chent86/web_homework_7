@@ -1,3 +1,7 @@
+body {
+	background-image: url("../picture/4.jpg");
+}
+
 #main {
 	position: relative;
 	top: 200px;
@@ -9,9 +13,26 @@
 	/*background-color: blue;*/
 }
 
+
+#pic {
+	border: 3px solid white;
+	top: 280px;
+	left: 65%;
+	position: absolute;
+	width: 352px;
+	height: 352px;
+	transition: 0.5s;
+}
+
+.b0 {
+	opacity: 0;
+}
+
+.b1 {
+	opacity: 1;
+}
+
 .win {
-	color: green;
-	font-size: 50pt;
 	position: absolute;
 	top: -200px;
 	left: -10px;
@@ -19,28 +40,11 @@
 }
 
 .show_win {
-	color: green;
+	color: #11f71c;
 	font-size: 50pt;
 	position: absolute;
 	top: -200px;
 	left: -10px;
-}
-
-.lose {
-	color: red;
-	font-size: 50pt;
-	position: absolute;
-	top: -200px;
-	left: 55px;
-	opacity: 0;	
-}
-
-.show_lose {
-	color: red;
-	font-size: 50pt;
-	position: absolute;
-	top: -200px;
-	left: 55px;
 }
 
 p {
@@ -49,22 +53,30 @@ p {
 	font-weight: bold;
 	font-family: Verdana;
 	padding-bottom: 20px;
+	color: white;
+}
+
+h1 {
+	text-align: center;
+	font-size: 20pt;
+	font-weight: bold;
+	font-family: Verdana;
+	padding-bottom: 20px;
+	color: white;
 }
 
 #picture {
 	position: absolute;
-	height: 353px;
+	height: 352px;
 	width: 352px;
 	margin-left: 13px;
 	/*background-color: blue;*/
-	border: 3px solid black;
+	/*border: 3px solid white;*/
 }
 
 #picture div {
-	border: 0;
-	border-collapse: collapse;
+	border: 1px solid white;
 	padding: 0;
-	background-image: url("panda.jpg");
 	width: 88px;
 	height: 88px;
 	display: inline-block;
@@ -73,40 +85,101 @@ p {
 	position: absolute;
 	transition: 0.5s;
 	cursor: pointer;
+	border-radius: 8px;
+}
+
+#p {
+	border: 0!important;
+}
+.a0 {
+	background-image: url("../picture/1.png");
+}
+
+.a1 {
+	background-image: url("../picture/2.png");	
+}
+
+.a2 {
+	background-image: url("../picture/3.png");	
+}
+
+.a3 {
+	background-image: url("../picture/4.png");		
+}
+
+.a4 {
+	background-image: url("../picture/5.jpg");		
 }
 
 #picture div:hover {
 	/*width: 91px;*/
 	/*height: 91px;*/
-	opacity: 0.6;
+	/*opacity: 0.6;*/
+	transform: scale(1.07);
 }
 
 #button {
+	border-radius: 8px;
 	position: absolute;
 	bottom: 65px;
-	left: 70px;
+	left:-100px;
 	font-size: 20pt;
 	background-color: #3571f2;
 	color: white;
 	padding: 10px;
+	transition: 0.5s;
 }
 
 #button:hover {
-	opacity: 0.5;
+	transform: scale(1.07);
 }
 
-#commit {
+#restart {
+	border-radius: 8px;
 	position: absolute;
 	bottom: 65px;
-	left: 220px;
+	left: 50px;
 	font-size: 20pt;
 	background-color: #3571f2;
 	color: white;
 	padding: 10px;
+	transition: 0.5s;
 }
 
-#commit:hover {
-	opacity: 0.5;
+#restart:hover {
+	transform: scale(1.07);
+}
+
+#change {
+	border-radius: 8px;
+	position: absolute;
+	bottom: 65px;
+	left: 200px;
+	font-size: 20pt;
+	background-color: #3571f2;
+	color: white;
+	padding: 10px;
+	transition: 0.5s;
+}
+
+#change:hover {
+	transform: scale(1.07);
+}
+
+#origin {
+	border-radius: 8px;
+	position: absolute;
+	bottom: 65px;
+	right: -75px;
+	font-size: 20pt;
+	background-color: #3571f2;
+	color: white;
+	padding: 10px;
+	transition: 0.5s;
+}
+
+#origin:hover {
+	transform: scale(1.07);
 }
 
 .start {
@@ -218,5 +291,5 @@ p {
 }
 
 span {
-	color: blue;
+	color: gold;
 }
