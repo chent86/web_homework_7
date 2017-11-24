@@ -1,0 +1,11 @@
+version: '2'
+services:
+  test_copy:
+    build: .
+    image: web_homework_7
+    ports:
+      - 8100:80
+    command: nginx -g 'daemon off;'
+    container_name: web7
+    restart: always
+    working_dir: /usr/share/nginx/html
